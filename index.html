@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pose Detection</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Pose Detection</h1>
-    <input type="file" id="upload" accept="video/*">
-    <video id="video" playsinline controls></video> <!-- controls属性を追加 -->
-    <canvas id="output"></canvas>
-
-    <!-- TensorFlow.jsとPoseNetのスクリプト -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+</head>
+<body>
+    <h1>Pose Detection Web App</h1>
+    <input type="file" id="video-upload" accept="video/*">
+    <video id="video" controls></video>
+    <canvas id="output"></canvas>
     <script src="app.js"></script>
 </body>
 </html>
